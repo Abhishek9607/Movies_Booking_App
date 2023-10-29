@@ -3,8 +3,8 @@ import logo from '../Assets/logo.png'
 
 function Navbar() {
   return (
-    <div>
-        <div className="navbar bg-[#333545] text-white ">
+    <div className=' bg-[#333545] '>
+        <div className="navbar bg-[#333545] w-[80vw] mx-auto ">
         <div className="flex-1">
            <div className='h-12   mx-10'>
             <img className='h-20 justify-center w-56' src={logo}  />
