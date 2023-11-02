@@ -5,7 +5,7 @@ import { AiFillStar } from 'react-icons/Ai';
 
 function HomeMoviesCard({movieImage} : HomeMoviesCardProps) {
   return (
-    <div className="flex flex-col items-center justify-center h-[350px] w-[222px] p-5">
+    <div className="flex flex-col items-center justify-center h-[450px] w-[265px] lg:h-[416px] lg:w-[222px] p-5">
         <img 
            src={movieImage} 
            className="h-[95%] w-full rounded-tr-lg rounded-tl-lg"

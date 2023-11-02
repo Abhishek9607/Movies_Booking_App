@@ -9,7 +9,7 @@ function Navbar() {
            <div className='h-12   mx-10'>
             <img className='h-20 justify-center w-56' src={logo}  />
            </div>
-            <div className="form-control w-3/5">
+            <div className="form-control w-3/5 lg:block hidden">
                 <input type="text" placeholder="Search" className="input input-bordered w-91 md:w-auto" />
             </div>
         </div>
