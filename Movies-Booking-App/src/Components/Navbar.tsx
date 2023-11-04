@@ -7,7 +7,7 @@ function Navbar() {
         <div className="navbar bg-[#333545] w-[80vw] mx-auto ">
         <div className="flex-1">
            <div className='h-12   mx-10'>
-            <img className='h-20 justify-center w-56' src={logo}  />
+            <img className='h-[100%] w-36 ' src={logo}  />
            </div>
             <div className="form-control w-3/5 lg:block hidden">
                 <input type="text" placeholder="Search" className="input input-bordered w-91 md:w-auto" />
@@ -34,7 +34,30 @@ function Navbar() {
       </ul>
     </div>
   </div>
-</div>
+    </div>
+    <div className='text-white bg-[#22232d]'>
+      <div className='flex gap-4 w-[80vw] mx-auto py-2 font-thin'>
+        <div>
+           Movies
+        </div>
+        <div>
+           Stream
+        </div>
+        <div>
+          Events
+        </div>
+        <div>
+           Plays
+        </div>
+        <div>Sports</div>
+        <div>Activities</div>
+        <div>Buzz</div>
+        <div>ICC MEN'S CRICKET WORLD CUP INDIA 2023</div>
+
+      </div>
+       
+    </div>
+
     </div>
   )
 }
