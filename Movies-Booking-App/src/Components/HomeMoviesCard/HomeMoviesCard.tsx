@@ -1,10 +1,24 @@
-type HomeMoviesCardProps = {
-    movieImage: string
-}
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import { AiFillStar } from 'react-icons/Ai';
+import Slider from "react-slick";
+
+type HomeMoviesCardProps = {
+  movieImage: string
+}
 
 function HomeMoviesCard({movieImage} : HomeMoviesCardProps) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  };
   return (
+    <Slider {...settings}>
     <div className="flex flex-col items-center justify-center h-[450px] w-[265px] lg:h-[416px] lg:w-[222px] p-5">
         <img 
            src={movieImage} 
@@ -16,6 +30,7 @@ function HomeMoviesCard({movieImage} : HomeMoviesCardProps) {
            <span>52.5k Votes</span>
         </div>
     </div>
+    </Slider>
   )
 }
 
