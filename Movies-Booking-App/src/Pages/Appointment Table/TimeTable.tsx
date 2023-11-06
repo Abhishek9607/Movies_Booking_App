@@ -1,8 +1,12 @@
+import TheatreShowcard from "../../Components/TheatreShowcard"
+
+
 
 
 function TimeTable() {
   return (
     <div>
+    <div className="min-h-[80-vh] bg-slate-300 ">
         <div className=' text-white bg-[#333545]'>
           <div className=' font-light text-7xl pt-8 pb-6 w-[80vw] mx-auto'>
               12th Fail - Hindi
@@ -10,10 +14,17 @@ function TimeTable() {
                  <button className="btn btn-xs text-sm border-2 border-[#91929b] bg-transparent text-[#91929b]">BIOGRAPHY</button>
                  <button  className="btn btn-xs text-sm border-2 border-[#91929b] bg-transparent text-[#91929b]">DRAMA</button>
               </div>
-          </div>
-        
+           </div>
+         </div>
         </div>
-       
+        <div className="bg-slate-300 mt-4 w-[100vw]">
+          <div className=" w-[80vw] mx-auto rounded-xl bg-[#FFFFFf]">
+            <TheatreShowcard num={10}/>
+            <TheatreShowcard num={1}/>
+            <TheatreShowcard num={8}/>
+            <TheatreShowcard num={36}/>
+          </div>
+        </div>
     </div>
   )
 }

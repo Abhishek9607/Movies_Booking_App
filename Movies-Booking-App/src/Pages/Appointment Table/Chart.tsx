@@ -5,10 +5,10 @@ function Chart() {
   return (
     <div >
         <div className="flex flex-col font-semibold justify-center items-start px-4 py-2">
-            <div className="">
+            <div >
             Cinepolish: Cross River Mall, Shahdara
             </div>
-           <div className="flex items-center justify-around gap-3 mt-2">
+           <div className="flex items-center justify-around gap-8 mt-2">
             <div className="text-green-400 font-light">
                <PiDeviceMobileBold className="inline text-2xl "/>M-Ticket
             </div>

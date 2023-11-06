@@ -2,7 +2,7 @@
 function MoviesTimeCard() {
   return (
  
-    <div className="relative group text-sm flex flex-col mt-5 text-green-400 items-center justify-center border-black rounded-lg w-32 p-1  border">
+    <div className="relative mx-2 my-2  group text-sm flex flex-col  text-green-400 items-center justify-center border-black rounded-lg w-32 p-1  border">
         <div >
             10:45 PM
         </div>
