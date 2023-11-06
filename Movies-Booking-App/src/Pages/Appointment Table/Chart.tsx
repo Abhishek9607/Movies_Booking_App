@@ -1,12 +1,12 @@
 import {MdFastfood} from "react-icons/md";
 import {PiDeviceMobileBold} from "react-icons/pi";
 
-function Chart() {
+function Chart({name} : {name: string}) {
   return (
     <div >
         <div className="flex flex-col font-semibold justify-center items-start px-4 py-2">
             <div >
-            Cinepolish: Cross River Mall, Shahdara
+            {name}
             </div>
            <div className="flex items-center justify-around gap-8 mt-2">
             <div className="text-green-400 font-light">
