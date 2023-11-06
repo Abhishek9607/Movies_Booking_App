@@ -9,15 +9,16 @@ import axiosInstance from '../Config/AxiosInstance';
 import HomeLayout from "../Layouts/HomeLayout";
 import Movie from '../Types/Movie';
 
-// type MoviePoster = [{
-//   id: string,
-//   poster: string
-// }]
+type MoviePoster = [{
+  id: string,
+  poster: string
+  name: string
+}]
 
 
 function Home() {
 
-  const [moviePoster, setMoviePoster] = useState([{id: "", poster: ""}]);
+  const [moviePoster, setMoviePoster] = useState<MoviePoster>([{id: "", poster: "", name: ""}]);
 
   async function fetchMovies() {
     try {
@@ -25,7 +26,8 @@ function Home() {
      const movieData = response.data.data.map((movie: Movie) => {
       return {
         id: movie._id,
-        poster:movie.poster,
+        poster: movie.poster,
+        name: movie.name
       }
      });
      console.log(movieData);
@@ -52,10 +54,10 @@ function Home() {
         <div className="flex flex-col lg:flex-row justify-center items-center ">
             {
               moviePoster && moviePoster.map((moviePoster) => {
-                return <HomeMoviesCard  key={moviePoster.id} movieImage={moviePoster.poster} />
+                return <HomeMoviesCard  key={moviePoster.id} movieImage={moviePoster.poster} movieId={moviePoster.id} movieName={moviePoster.name}/>
               })
             }
-       </div>
+       </div> 
      
           <HomeBanner image={cricket}/>
      </div>
